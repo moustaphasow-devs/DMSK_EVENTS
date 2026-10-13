@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMSK Events - Traiteur & Réservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>DMSK Events 🛈</h1>
+        <p>Service Traiteur & Organisation d'Événements à Conakry</p>
+    </header>
+
+    <main class="container">
+        <section class="services">
+            <h2>Nos Prestations</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Mariages & Réceptions</h3>
+                    <p>Buffet guinéen et international complet avec service à table pour vos invités.</p>
+                    <button class="btn" onclick="reserverPrestation('Mariage')">Demander un devis</button>
+                </div>
+                <div class="card">
+                    <h3>Pause-Café & Seminares</h3>
+                    <p>Livraison de pause-café, petits-déjeuners et pauses déjeuner d'entreprises.</p>
+                    <button class="btn" onclick="reserverPrestation('Séminaire')">Demander un devis</button>
+                </div>
+                <div class="card">
+                    <h3>Anniversaires & Fêtes</h3>
+                    <p>Repas de fête sur-mesure et réservations de tables privatisées.</p>
+                    <button class="btn" onclick="reserverPrestation('Anniversaire')">Demander un devis</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Réservation / Demande de Devis</h2>
+            <form id="eventsForm" class="form">
+                <div class="form-group">
+                    <label>Nom complet :</label>
+                    <input type="text" id="name" required placeholder="Ex: Moustapha Sow">
+                </div>
+                <div class="form-group">
+                    <label>Type d'événement :</label>
+                    <input type="text" id="event" required placeholder="Ex: Mariage, Dîner, Réunion">
+                </div>
+                <div class="form-group">
+                    <label>Nombre de personnes estimé :</label>
+                    <input type="number" id="guests" required placeholder="Ex: 50">
+                </div>
+                <div class="form-group">
+                    <label>Date souhaitée :</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit" class="btn btn-submit">Envoyer sur WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 DMSK Events - Conakry, Guinée.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
